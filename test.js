@@ -7,7 +7,7 @@ describe("Easy", function() {
         const result = "hello world";
         expect(decode(expr)).to.equal(result);
     });
-    
+
     it("Sentence test 2", function() {
         const expr = "000000001100101010100000000010**********00111110110000101011000000101000111011100000111011**********00111010100000101110000011111100001011110000001110**********001010111000001111110011101011**********00101111110000101011000000111100101111100000101010**********0000111111001010101100000000100000101110**********000000001100101010100000000010**********0010111010000000101100111110100011101111**********000011101000001111110000111110";
         const result = "the quick brown fox jumps over the lazy dog";
@@ -43,13 +43,13 @@ describe("Easy", function() {
         const result = "they keep me in the basement";
         expect(decode(expr)).to.equal(result);
     });
-    
+
     it("Sentence test 8", function() {
         const expr = "0000101010000000101100101010110000000010**********00000011110000000010";
         const result = "save me";
         expect(decode(expr)).to.equal(result);
     });
-    
+
     it("Sentence test 9", function() {
         const expr = "0011101110000000101100101110100010111010**********000000001100101010100000000010**********001011111000001111110010111010000000101000111011100000000010";
         const result = "call the police";
@@ -61,10 +61,10 @@ describe("Easy", function() {
         const result = "answer on the ultimate question of life the universe and everything is 42";
         expect(decode(expr)).to.equal(result);
     });
-    
 });
 
 describe("Medium", function() {
+
     it("Medium line length test 1", function() {
         const expr = "00000000100000111010101010111100111011100000001011111110101011111010101010101010";
         const result = "ed3ca775";
@@ -306,4 +306,5 @@ describe("Hard (what's going on)", function() {
         const result = "ed3ca775829b4b8c0e59620017bf2596b27d0c5cd3de8eac0a145c4f25b31a63e2ebf340c4335a826c443ecea6069f50a836fdc35cc6c2a94cdf5da0fb3b6acb";
         expect(decode(expr)).to.equal(result);
     });
+
 })
